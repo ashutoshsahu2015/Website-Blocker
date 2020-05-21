@@ -5,17 +5,17 @@ This is a simple python script that we can be used by Organization in their offi
 
 ## How to run the program
 **Please take a backup of your hostfile before running the script.**
+
 You can directly excute the script website_blocker.py using the command:
 ```
 	python website_blocker.py
-
 ```
 
 ## Functionality
 
 The program first check the current time using the daytime module in python
 
-*If the time is between the working hour of organization it will add the webistes from the website list to the host file of computer.
+* If the time is between the working hour of organization it will add the webistes from the website list to the host file of computer.
 
 ```python
 with open(host_path, 'r+') as file:
@@ -29,7 +29,7 @@ with open(host_path, 'r+') as file:
 ```
 
 
-*If the current time is offtime in the organization the program will check the website in host file and remove it if it exist in the file.
+* If the current time is offtime in the organization the program will check the website in host file and remove it if it exist in the file.
 
 ```python
 with open(host_path, 'r+') as file:
